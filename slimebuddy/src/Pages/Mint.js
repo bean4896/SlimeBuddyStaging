@@ -1,14 +1,19 @@
 import React from "react";
 
 const Mint = () => {
-    <div class="flex h-screen items-center justify-center bg-indigo-50 px-4">
-      <div class="max-w-sm overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl">
-        <img src="https://i.imgur.com/5dmBrx6.jpg" alt="plant" class="h-auto w-full" />
-        <div class="p-5">
-          <p class="text-medium mb-5 text-gray-700">Well, aren't you going up to the lake tonight, you've been planning it for two weeks.</p>
-          <button class="w-full rounded-md bg-indigo-600  py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">See More</button>
+    return (
+        <div className='App h-full py-6 px-6 bg-white'>
+        <div className='bg-gray-50 shadow-lg border rounded-md'>
+          <div className='mx-auto max-w-7xl py-12 px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8'>
+            <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
+              <span className='block'>Mint</span>
+            </h2>
+            <div className='mt-8 flex lg:mt-0 lg:flex-shrink-0'>
+              <div className='inline-flex rounded-md shadow'>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-}
+      )}
 export default Mint;
