@@ -1,23 +1,34 @@
 import React from "react";
-import '../index.css';
+import "../index.css";
+import Hero from "../images/Hero.jpg";
+import ReactCurvedText from 'react-curved-text';
 
 const Home = () => {
   return (
-  <div className='App h-full py-6 px-6 bg-white'>
-  <div className='bg-gray-50 shadow-lg border rounded-md'>
-    <div className='mx-auto max-w-7xl py-12 px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8'>
-      <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-        <span className='block'>Homepage</span>
-        <span className='block text-my-indigo'>
-          SlimeBuddy.
-        </span>
-      </h2>
-      <div className='mt-8 flex lg:mt-0 lg:flex-shrink-0'>
-        <div className='inline-flex rounded-md shadow'>
+    <div className="h-full py-6 px-6 bg-black">
+      <div className="flex justify-center items-center md:mt-[10vh]">
+        <div>
+          <img src={Hero} alt="slimebuddy" />
         </div>
       </div>
+
+      <div className="flex justify-center items-center mt-4">
+      <ReactCurvedText width='360'
+  height='50'
+  cx='200'
+  cy='25'
+  rx='180'
+  ry='12'
+  startOffset='0'
+  reversed={false}
+  text='A new adventure awaits'
+  textProps={{"style": {"fontSize": "30"}}}
+  textPathProps={{"fill": "#e600d2"}}
+  tspanProps={{"dy": "0"}}
+  svgProps={{"style": {"transform": "rotate(0deg)"}}} />
+
+      </div>
     </div>
-  </div>
-</div>
-)}
+  );
+};
 export default Home;

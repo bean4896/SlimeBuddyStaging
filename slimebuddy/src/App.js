@@ -11,6 +11,7 @@ import NavBar from './components/NavBar';
 const App = () => {
  return (
     <>
+    <div className='bg-black min-h-screen'>
       <NavBar />
        <Routes>
           <Route path="/" element={<Home />} />
@@ -20,7 +21,7 @@ const App = () => {
           <Route path="/Inventory" element={<Inventory />} />
           <Route path="/Store" element={<Store />} />
        </Routes>
-  
+       </div>
     </>
  );
 };

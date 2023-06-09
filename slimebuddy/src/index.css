@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.navlink:hover {
+    color: #13e4bd;
+    text-shadow:0px 0px 30px #13e4bd;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
