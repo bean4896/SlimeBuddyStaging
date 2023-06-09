@@ -12,12 +12,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-4">
+      <div className="flex justify-center items-center mt-4 ml-2">
       <ReactCurvedText width='360'
   height='50'
   cx='200'
   cy='25'
-  rx='180'
+  rx='170'
   ry='12'
   startOffset='0'
   reversed={false}
@@ -26,7 +26,6 @@ const Home = () => {
   textPathProps={{"fill": "#e600d2"}}
   tspanProps={{"dy": "0"}}
   svgProps={{"style": {"transform": "rotate(0deg)"}}} />
-
       </div>
     </div>
   );
