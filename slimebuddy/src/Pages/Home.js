@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 import Hero from "../images/Hero.jpg";
-import ReactCurvedText from 'react-curved-text';
+import ReactCurvedText from "react-curved-text";
 
 const Home = () => {
   return (
@@ -12,20 +12,23 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-4 ml-2">
-      <ReactCurvedText width='360'
-  height='50'
-  cx='200'
-  cy='25'
-  rx='170'
-  ry='12'
-  startOffset='0'
-  reversed={false}
-  text='A new adventure awaits'
-  textProps={{"style": {"fontSize": "30"}}}
-  textPathProps={{"fill": "#e600d2"}}
-  tspanProps={{"dy": "0"}}
-  svgProps={{"style": {"transform": "rotate(0deg)"}}} />
+      <div className="flex justify-center items-center mt-4">
+        <ReactCurvedText
+          width="320"
+          height="40"
+          cx="160"
+          cy="20"
+          rx="160"
+          ry="20"
+          startOffset="20"
+          reversed={false}
+          text="A new adventure awaits"
+          textProps={{ style: { fontSize: "29" } }}
+          textPathProps={{ fill: "#e600d2" }}
+          tspanProps={null}
+          ellipseProps={null}
+          svgProps={null}
+        />
       </div>
     </div>
   );

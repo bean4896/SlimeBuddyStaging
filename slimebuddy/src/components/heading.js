@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../index.css';
 
 function Heading({ text, arc, radius }) {
   const characters = text.split('');
   const degree = arc / characters.length;
 
   return (
-    <h1>
+    <h1 className='arctitle'>
       {characters.map((char, i) => (
         <span
           key={`heading-span-${i}`}
@@ -27,11 +28,6 @@ Heading.propTypes = {
   text: PropTypes.string.isRequired,
   arc: PropTypes.number, // how curved do you want the text
   radius: PropTypes.number, // how big do you want the curve
-};
-
-Heading.defaultProps = {
-  arc: 350,
-  radius: 34350,
 };
 
 export default Heading;
